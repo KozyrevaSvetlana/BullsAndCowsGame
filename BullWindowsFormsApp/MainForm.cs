@@ -118,5 +118,17 @@ namespace BullWindowsFormsApp
             }
             return bullsCount;
         }
+
+        private void рестартToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы хотите начать игру заново?", "Exit", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                Application.Restart();
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы действительно хотите выйти из игры?", "Exit", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                Application.Exit();
+        }
     }
 }

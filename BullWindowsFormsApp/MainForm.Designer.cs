@@ -39,7 +39,13 @@
             this.BullsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CowsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumberColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.рестартToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.правилаИгрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.historyDataGridView)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // puzzledWordLabel
@@ -134,6 +140,46 @@
             this.NumberColumn.Name = "NumberColumn";
             this.NumberColumn.ReadOnly = true;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.менюToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // менюToolStripMenuItem
+            // 
+            this.менюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.рестартToolStripMenuItem,
+            this.правилаИгрыToolStripMenuItem,
+            this.выходToolStripMenuItem});
+            this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
+            this.менюToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.менюToolStripMenuItem.Text = "Меню";
+            // 
+            // рестартToolStripMenuItem
+            // 
+            this.рестартToolStripMenuItem.Name = "рестартToolStripMenuItem";
+            this.рестартToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.рестартToolStripMenuItem.Text = "Рестарт";
+            this.рестартToolStripMenuItem.Click += new System.EventHandler(this.рестартToolStripMenuItem_Click);
+            // 
+            // правилаИгрыToolStripMenuItem
+            // 
+            this.правилаИгрыToolStripMenuItem.Name = "правилаИгрыToolStripMenuItem";
+            this.правилаИгрыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.правилаИгрыToolStripMenuItem.Text = "Правила игры";
+            // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,10 +192,14 @@
             this.Controls.Add(this.CheckButton);
             this.Controls.Add(this.userAnswerTextBox);
             this.Controls.Add(this.puzzledWordLabel);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Игра \"Быки и коровы\"";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.historyDataGridView)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,6 +218,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BullsColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn CowsColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn NumberColumn;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem рестартToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem правилаИгрыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
     }
 }
 
