@@ -1,6 +1,6 @@
 ﻿namespace BullWindowsFormsApp
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -34,12 +34,12 @@
             this.bullsCountLabel = new System.Windows.Forms.Label();
             this.cowsCountLabel = new System.Windows.Forms.Label();
             this.infoUserAnswerLabel = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.historyDataGridView = new System.Windows.Forms.DataGridView();
             this.StepColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BullsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CowsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumberColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // puzzledWordLabel
@@ -95,18 +95,20 @@
             this.infoUserAnswerLabel.TabIndex = 5;
             this.infoUserAnswerLabel.Text = "Введите 4 уникальных цифры";
             // 
-            // dataGridView1
+            // historyDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.historyDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.historyDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.historyDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.StepColumn,
             this.BullsColumn,
             this.CowsColumn,
             this.NumberColumn});
-            this.dataGridView1.Location = new System.Drawing.Point(379, 34);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(409, 404);
-            this.dataGridView1.TabIndex = 6;
+            this.historyDataGridView.GridColor = System.Drawing.SystemColors.Control;
+            this.historyDataGridView.Location = new System.Drawing.Point(379, 34);
+            this.historyDataGridView.Name = "historyDataGridView";
+            this.historyDataGridView.Size = new System.Drawing.Size(409, 404);
+            this.historyDataGridView.TabIndex = 6;
             // 
             // StepColumn
             // 
@@ -132,22 +134,22 @@
             this.NumberColumn.Name = "NumberColumn";
             this.NumberColumn.ReadOnly = true;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.historyDataGridView);
             this.Controls.Add(this.infoUserAnswerLabel);
             this.Controls.Add(this.cowsCountLabel);
             this.Controls.Add(this.bullsCountLabel);
             this.Controls.Add(this.CheckButton);
             this.Controls.Add(this.userAnswerTextBox);
             this.Controls.Add(this.puzzledWordLabel);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainForm";
+            this.Text = "Игра \"Быки и коровы\"";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,7 +163,7 @@
         private System.Windows.Forms.Label bullsCountLabel;
         private System.Windows.Forms.Label cowsCountLabel;
         private System.Windows.Forms.Label infoUserAnswerLabel;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView historyDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn StepColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn BullsColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn CowsColumn;
