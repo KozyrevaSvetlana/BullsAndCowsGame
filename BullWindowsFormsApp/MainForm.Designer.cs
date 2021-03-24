@@ -101,9 +101,9 @@
             this.CowsColumn,
             this.NumberColumn});
             this.historyDataGridView.GridColor = System.Drawing.SystemColors.Control;
-            this.historyDataGridView.Location = new System.Drawing.Point(379, 34);
+            this.historyDataGridView.Location = new System.Drawing.Point(341, 34);
             this.historyDataGridView.Name = "historyDataGridView";
-            this.historyDataGridView.Size = new System.Drawing.Size(409, 404);
+            this.historyDataGridView.Size = new System.Drawing.Size(447, 404);
             this.historyDataGridView.TabIndex = 6;
             // 
             // StepColumn
