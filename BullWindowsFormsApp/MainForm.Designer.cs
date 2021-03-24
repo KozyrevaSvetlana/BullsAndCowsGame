@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.puzzledWordLabel = new System.Windows.Forms.Label();
             this.userAnswerTextBox = new System.Windows.Forms.TextBox();
             this.CheckButton = new System.Windows.Forms.Button();
             this.bullsCountLabel = new System.Windows.Forms.Label();
@@ -47,15 +46,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.historyDataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // puzzledWordLabel
-            // 
-            this.puzzledWordLabel.AutoSize = true;
-            this.puzzledWordLabel.Location = new System.Drawing.Point(13, 425);
-            this.puzzledWordLabel.Name = "puzzledWordLabel";
-            this.puzzledWordLabel.Size = new System.Drawing.Size(13, 13);
-            this.puzzledWordLabel.TabIndex = 0;
-            this.puzzledWordLabel.Text = "0";
             // 
             // userAnswerTextBox
             // 
@@ -163,21 +153,21 @@
             // рестартToolStripMenuItem
             // 
             this.рестартToolStripMenuItem.Name = "рестартToolStripMenuItem";
-            this.рестартToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.рестартToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.рестартToolStripMenuItem.Text = "Рестарт";
             this.рестартToolStripMenuItem.Click += new System.EventHandler(this.рестартToolStripMenuItem_Click);
             // 
             // правилаИгрыToolStripMenuItem
             // 
             this.правилаИгрыToolStripMenuItem.Name = "правилаИгрыToolStripMenuItem";
-            this.правилаИгрыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.правилаИгрыToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.правилаИгрыToolStripMenuItem.Text = "Правила игры";
             this.правилаИгрыToolStripMenuItem.Click += new System.EventHandler(this.правилаИгрыToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
@@ -192,7 +182,6 @@
             this.Controls.Add(this.bullsCountLabel);
             this.Controls.Add(this.CheckButton);
             this.Controls.Add(this.userAnswerTextBox);
-            this.Controls.Add(this.puzzledWordLabel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
@@ -207,8 +196,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label puzzledWordLabel;
         private System.Windows.Forms.TextBox userAnswerTextBox;
         private System.Windows.Forms.Button CheckButton;
         private System.Windows.Forms.Label bullsCountLabel;
