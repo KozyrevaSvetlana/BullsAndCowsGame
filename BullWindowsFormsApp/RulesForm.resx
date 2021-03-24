@@ -117,19 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="StepColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="BullsColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="CowsColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="NumberColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="rulesLabel.Text" xml:space="preserve">
+    <value>Компьютер загадывает четырехзначное число с уникальными цифрами.
+Ваша задача угадать это число.
+Если в введенной комбинации есть цифра и она стоит на своем месте, то количество быков увеличивается.
+Если есть цифра и она стоит не на своем месте, то количество коров увеличивается.
+Когда количество быков будет равно 4, а количество коров станет 0. Вы угадали число.
+
+Пример:
+Компьютер загадал число 5670.
+Пользователь ввел число 0623.
+Программа покажет количество быков 1, 
+т.к. цифра 6 есть, и она стоит на своем месте. 
+А также количество коров будет 1, 
+т.к. цифра 0 есть в загаданном числе, но она стоит не на своем месте.</value>
+  </data>
 </root>
