@@ -111,9 +111,9 @@
             this.CowsColumn,
             this.NumberColumn});
             this.historyDataGridView.GridColor = System.Drawing.SystemColors.Control;
-            this.historyDataGridView.Location = new System.Drawing.Point(379, 34);
+            this.historyDataGridView.Location = new System.Drawing.Point(342, 34);
             this.historyDataGridView.Name = "historyDataGridView";
-            this.historyDataGridView.Size = new System.Drawing.Size(409, 404);
+            this.historyDataGridView.Size = new System.Drawing.Size(446, 404);
             this.historyDataGridView.TabIndex = 6;
             // 
             // StepColumn
@@ -163,21 +163,21 @@
             // рестартToolStripMenuItem
             // 
             this.рестартToolStripMenuItem.Name = "рестартToolStripMenuItem";
-            this.рестартToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.рестартToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.рестартToolStripMenuItem.Text = "Рестарт";
             this.рестартToolStripMenuItem.Click += new System.EventHandler(this.рестартToolStripMenuItem_Click);
             // 
             // правилаИгрыToolStripMenuItem
             // 
             this.правилаИгрыToolStripMenuItem.Name = "правилаИгрыToolStripMenuItem";
-            this.правилаИгрыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.правилаИгрыToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.правилаИгрыToolStripMenuItem.Text = "Правила игры";
             this.правилаИгрыToolStripMenuItem.Click += new System.EventHandler(this.правилаИгрыToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
