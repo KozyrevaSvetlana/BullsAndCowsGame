@@ -35,5 +35,89 @@ namespace BullWindowsFormsApp
 
             puzzledWordLabel.Text = puzzledWord;
         }
+
+        private void CheckButton_Click(object sender, EventArgs e)
+        {
+            string userWord = userAnswerTextBox.Text;
+            bullsCountLabel.Text = "Быков = " + bullsCount;
+            cowsCountLabel.Text = "Коров = " + cowsCount;
+            if (!IsValid(userWord))
+            {
+                return;
+            }
+            stepCount++;
+            bullsCount = CalculateBullsCount(userWord);
+            cowsCount = CalculateCowsCount(userWord);
+            historyDataGridView.Rows.Add(stepCount, userWord, bullsCount, cowsCount);
+            if (bullsCount == wordLenght)
+            {
+                MessageBox.Show($"Поздравляем! Вы угаладали число {puzzledWord} с {stepCount} раза");
+                CheckButton.Enabled = false;
+                userAnswerTextBox.Enabled = false;
+                historyDataGridView.Enabled = false;
+
+            }
+        }
+
+        private bool IsValid(string userWord)
+        {
+            if (userWord.Length != wordLenght)
+            {
+                MessageBox.Show("Строка должна быть длинной 4");
+                return false;
+            }
+            for (int i = 0; i < wordLenght; i++)
+            {
+                if (!char.IsDigit(userWord[i]))
+                {
+                    MessageBox.Show("Введите число");
+                    return false;
+                }
+            }
+            for (int i = 0; i < userWord.Length; i++)
+            {
+                for (int k = i + 1; k < userWord.Length; k++)
+                {
+                    if (userWord[i] == userWord[k])
+                    {
+                        MessageBox.Show($"Цифра {i} повтораяется раза");
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        private int CalculateCowsCount(string userWord)
+        {
+            int cowsCount = 0;
+            for (int i = 0; i < wordLenght; i++)
+            {
+                for (int k = 0; k < wordLenght; k++)
+                {
+                    if (i == k)
+                    {
+                        continue;
+                    }
+                    if (puzzledWord[i] == userWord[k])
+                    {
+                        cowsCount++;
+                    }
+                }
+            }
+            return cowsCount;
+        }
+        private int CalculateBullsCount(string userWord)
+        {
+            int bullsCount = 0;
+            for (int i = 0; i < wordLenght; i++)
+            {
+                if (puzzledWord[i] == userWord[i])
+                {
+                    bullsCount++;
+                }
+            }
+            return bullsCount;
+        }
     }
+}
 }
